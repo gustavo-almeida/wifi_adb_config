@@ -5,7 +5,7 @@
 SN=$1
 
 if [[ $# -eq 0 ]] ; then
-	echo "Serial Number parameter must be passed"
+	echo "Required device Serial Number as parameter"
     exit 0
 fi
 
