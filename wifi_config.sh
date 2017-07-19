@@ -17,7 +17,7 @@ WIRELESS_SSID="[m4u_corp]"
 WIRELESS_KEY_MGMT="WPA-EAP IEEE8021X"
 WIRELESS_EAP=PEAP
 WIRELESS_USER=patricia.oliveira
-WIRELESS_PASSWORD=hash:47b1bf19604e8951bc86a316b49e6660
+WIRELESS_PASSWORD=hash:576607e6e82cda878b3e96eab9731060
 # Generate another hash password if you need: echo -n {plain_text_password} | iconv -t utf16le | openssl md4
 
 adb start-server
@@ -56,7 +56,7 @@ echo "  eap=$WIRELESS_EAP" >> wpa_supplicant.conf
 echo "  identity=\"$WIRELESS_USER\"" >> wpa_supplicant.conf
 echo "  password=$WIRELESS_PASSWORD" >> wpa_supplicant.conf
 #echo "  password=\"$WIRELESS_PASSWORD\"" >> wpa_supplicant.conf
-echo "  priority=1" >> wpa_supplicant.conf
+#echo "  priority=1" >> wpa_supplicant.conf
 #echo "	sim_slot=\"-1\"" >> wpa_supplicant.conf
 #echo "	imsi=\"none\"" >> wpa_supplicant.conf
 #echo "	proactive_key_caching=1" >> wpa_supplicant.conf
